@@ -1,0 +1,28 @@
+
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+
+
+
+
+ENV AWS_ACCESS_KEY_ID="#"
+ENV AWS_SECRET_ACCESS_KEY="#"
+ENV INFERENCE_PROFILE_ID="#"
+
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . ./app
+
+EXPOSE 8181
+
+CMD ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8181"]
+
+#docker build -t api:latest -f Dockerfile_api .
+#docker run --name fastapi-container --network my_network -p 8181:8181 api:latest
+

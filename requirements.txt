@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+boto3
+python-dotenv
+requests
+streamlit
+python-multipart
+pymilvus
