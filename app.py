@@ -4,6 +4,8 @@ import streamlit as st
 
 # FastAPI endpoint URL
 FASTAPI_URL = "http://localhost:8000/caption/"
+#FASTAPI_URL_Docker = # Adopt it 
+
 
 # Streamlit UI
 st.title("Medical Image Captioning")
