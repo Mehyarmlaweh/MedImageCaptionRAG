@@ -1,11 +1,12 @@
 # Medical Image Captioning with RAG and FastAPI-Streamlit Interface
+This project provides a medical image captioning solution using a combination of image embeddings, similarity retrieval from Milvus, and text generation models from Bedrock. It leverages a FastAPI backend for processing images and a Streamlit interface for easy user interaction.
+
 ## Architecture Diagram
 ![Architecture Diagram](./assets/architecture.png)
 
 ## Model Card
 ![Architecture Diagram](./assets/modelcard.png)
 
-This project provides a medical image captioning solution using a combination of image embeddings, similarity retrieval from Milvus, and text generation models from Bedrock. It leverages a FastAPI backend for processing images and a Streamlit interface for easy user interaction.
 
 ## Project Overview
 
